@@ -24,15 +24,15 @@ public class Databasedemo1 {
 		    
 		    
 		    
-				    
-					try {
+				        
+					//try {
 						statement.addBatch("insert into employee1 values(9,Rebecca,'109','109')");
-					} catch (Exception e) {
+					//} catch (Exception e) {
 						
 						con.rollback();
-					}
+					//}
 			
-		   //java.sql.BatchUpdateException: Unknown column 'Rebecca' in 'field list' Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'Rebecca' in 'field list' at line 42			
+		   //java.sql.BatchUpdateException: Unknown column 'Rebecca' in 'field list' Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'Rebecca' in 'field list' at line 42 java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true		
 				
 				
 			
